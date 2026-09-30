@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WattWise | Australian Appliance Energy Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <button class="logo-btn" id="logo-btn" aria-label="Go to Home page">
+      <img class="logo-img" src="assets\PowerIcon.png" alt="WattWise power logo">
+      <span class="brand-name">WattWise</span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+      <li><a href="#" class="nav-link" data-page="televisions">Televisions</a></li>
+      <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+    </ul>
+
+    <p class="current-page-indicator">You are viewing: <span id="current-page-label">Home</span></p>
+  </nav>
+</header>
+
+<h1>Appliance Energy Consumption</h1>
+<div id="content"></div>
+<!-- Give the SVG a size so shapes can be seen -->
+<svg width="300" height="150"></svg>
+<!-- Load D3 first, then your D3 code file -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="energy-d3.js"></script>
+
+<main>
+
+  <!-- HOME PAGE -->
+  <section id="home" class="page active-page">
+    <div class="hero">
+      <h1>Understand Your Home's Energy Appetite</h1>
+      <p class="subtitle">Placeholder insights on how Australian households use electricity, appliance by appliance.</p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <h2>National Snapshot</h2>
+        <p>Placeholder: Australian households reportedly spend around <strong>$1,500&ndash;$2,200 AUD</strong> per year on electricity, with appliances contributing a significant share alongside heating and cooling.</p>
+      </article>
+      <article class="card">
+        <h2>Star Rating System</h2>
+        <p>Placeholder: The Energy Rating Label (1&ndash;10 stars) helps Australians compare appliance efficiency at point of sale, from fridges to televisions.</p>
+      </article>
+      <article class="card">
+        <h2>Standby Power</h2>
+        <p>Placeholder: Appliances left on standby may account for roughly <strong>5&ndash;10%</strong> of a typical home's electricity bill nationally.</p>
+      </article>
+      <article class="card">
+        <h2>Peak Usage</h2>
+        <p>Placeholder: Evening peak periods (5pm&ndash;8pm) tend to see the highest household energy demand across most Australian states.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TELEVISIONS PAGE -->
+  <section id="televisions" class="page">
+    <h1>Television Energy Consumption</h1>
+    <p class="subtitle">Placeholder data on how TVs draw power in Australian homes.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>TV Type</th>
+            <th>Average Screen Size</th>
+            <th>Typical Power Draw</th>
+            <th>Est. Annual Cost (AUD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LED LCD</td>
+            <td>55"</td>
+            <td>~90W</td>
+            <td>$45&ndash;$65</td>
+          </tr>
+          <tr>
+            <td>OLED</td>
+            <td>55"</td>
+            <td>~110W</td>
+            <td>$55&ndash;$80</td>
+          </tr>
+          <tr>
+            <td>QLED</td>
+            <td>65"</td>
+            <td>~130W</td>
+            <td>$65&ndash;$95</td>
+          </tr>
+          <tr>
+            <td>Older Plasma</td>
+            <td>50"</td>
+            <td>~200W+</td>
+            <td>$100&ndash;$150</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="table-note">Placeholder figures for illustration only, based on general Australian market assumptions.</p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <h2>Screen Size Matters</h2>
+        <p>Placeholder: Larger screens generally draw more power, with energy use increasing roughly in proportion to screen area.</p>
+      </article>
+      <article class="card">
+        <h2>Panel Technology</h2>
+        <p>Placeholder: OLED panels can be more efficient at darker scenes but may use more power on bright content compared to LED LCD panels.</p>
+      </article>
+      <article class="card">
+        <h2>Eco Settings</h2>
+        <p>Placeholder: Enabling "eco mode" or reducing backlight brightness can reduce a television's running cost by an estimated 10&ndash;20%.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT PAGE -->
+  <section id="about" class="page">
+    <h1>About WattWise</h1>
+    <p class="subtitle">Placeholder mission statement and background.</p>
+
+    <div class="about-content">
+      <p>WattWise (placeholder name) is a demonstration project created to help Australian households better understand appliance energy consumption. This is placeholder content used for demonstration purposes only and does not reflect verified statistics.</p>
+      <p>Our goal, for the purpose of this demo, is to bring together approachable, easy-to-digest information about household electricity use &mdash; from everyday appliances like televisions and refrigerators, to more general national energy trends across Australia.</p>
+      <p>All figures presented across this site are placeholders and should be replaced with data sourced from official bodies such as the Australian Government's <em>Energy Rating</em> scheme or the Australian Energy Market Operator (AEMO) before real-world use.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 WattWise &mdash; Placeholder content for demonstration purposes. Done by 102771146, Pang Jee Nee</p>
+  <p class="footer-sub">Built as a sample static website. All energy figures are illustrative placeholders.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
